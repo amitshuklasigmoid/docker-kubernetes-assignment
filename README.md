@@ -1,12 +1,14 @@
 # Docker Assignment
 - Created a postgres connection with below configurations
-<img width="1211" alt="Screenshot 2023-06-14 at 11 58 21 AM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/47ad7729-85c5-4f87-b68b-1a937de4b46d">
+<img width="1431" alt="Screenshot 2023-06-14 at 1 05 43 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/bf36b3af-9578-49fc-984c-5e583df401a9">
+
 
 - This is my airflow DAG that contains two tasks, One task for creating a table and another for inserting current timestamp into this.
-<img width="1439" alt="Screenshot 2023-06-14 at 11 58 59 AM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/d2f5a862-bd19-4ea8-a9d8-de63a142e617">
+
+<img width="1439" alt="Screenshot 2023-06-14 at 1 06 18 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/bfe0560c-76e2-4644-a8b8-f33a2c65fdef">
 
 - My table as myTime has been created successfully and current timestamp inserted successfully into my table.
-<img width="620" alt="Screenshot 2023-06-14 at 12 00 00 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/b2e0af44-1325-4abc-bc78-87de1e18612b">
+<img width="914" alt="Screenshot 2023-06-14 at 1 07 28 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/d1958368-0605-490e-8848-4870673555b6">
 
 
 ## Kubernetes Assignment
@@ -70,8 +72,11 @@ vim time_task.py
 
 7. Accessed the airflow webserver by running the command ```minikube service airflow```. My airflow is accessible on http://127.0.0.1:54868 Upon logging in, the dag was visible, then created a postgres connection and then ran my dag, it has been succesfully executed.
 
-<img width="964" alt="Screenshot 2023-06-14 at 12 53 46 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/7f56f845-e4f9-4282-8430-3c1a3eeac740">
-<img width="1440" alt="Screenshot 2023-06-13 at 5 53 51 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/6cd10864-c4b6-4827-9fbb-8f0280ca4d34">
+<img width="758" alt="Screenshot 2023-06-14 at 1 09 15 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/059d619f-00c2-42d3-a1e1-931e73e051d7">
+
+<img width="1440" alt="Screenshot 2023-06-13 at 5 53 51 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/00a923d7-d7df-4cda-b7a0-a8cc442c70a3">
+
 
 8. Verified this by logging into the postgres container and viewing the table.
-<img width="1440" alt="Screenshot 2023-06-13 at 5 55 25 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/aba44577-efb1-42dd-8209-414637fedc36">
+<img width="1440" alt="Screenshot 2023-06-13 at 5 55 25 PM" src="https://github.com/amitshuklasigmoid/docker-kubernetes-assignment/assets/122515454/db4c16a4-56d6-4f13-9cc9-5c7275bb19ba">
+
