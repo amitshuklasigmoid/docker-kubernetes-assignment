@@ -1,0 +1,34 @@
+[2023-05-31T13:13:24.497+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: time_task.create_table manual__2023-05-31T13:13:23.503973+00:00 [queued]>
+[2023-05-31T13:13:24.502+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: time_task.create_table manual__2023-05-31T13:13:23.503973+00:00 [queued]>
+[2023-05-31T13:13:24.503+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-31T13:13:24.503+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-05-31T13:13:24.504+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-31T13:13:24.511+0000] {taskinstance.py:1309} INFO - Executing <Task(PostgresOperator): create_table> on 2023-05-31 13:13:23.503973+00:00
+[2023-05-31T13:13:24.514+0000] {standard_task_runner.py:55} INFO - Started process 407 to run task
+[2023-05-31T13:13:24.518+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'time_task', 'create_table', 'manual__2023-05-31T13:13:23.503973+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/insertTime.py', '--cfg-path', '/tmp/tmp8ifcg4k5']
+[2023-05-31T13:13:24.518+0000] {standard_task_runner.py:83} INFO - Job 11: Subtask create_table
+[2023-05-31T13:13:24.568+0000] {task_command.py:389} INFO - Running <TaskInstance: time_task.create_table manual__2023-05-31T13:13:23.503973+00:00 [running]> on host b61c8577f382
+[2023-05-31T13:13:24.613+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=time_task
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-31T13:13:23.503973+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-31T13:13:23.503973+00:00
+[2023-05-31T13:13:24.614+0000] {sql.py:254} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS myTime (
+                curr_time TIMESTAMP
+            );
+        
+[2023-05-31T13:13:24.622+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-05-31T13:13:24.728+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-05-31T13:13:24.733+0000] {sql.py:375} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS myTime (
+                curr_time TIMESTAMP
+            );
+        , parameters: None
+[2023-05-31T13:13:24.741+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=time_task, task_id=create_table, execution_date=20230531T131323, start_date=20230531T131324, end_date=20230531T131324
+[2023-05-31T13:13:24.771+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-05-31T13:13:24.787+0000] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check

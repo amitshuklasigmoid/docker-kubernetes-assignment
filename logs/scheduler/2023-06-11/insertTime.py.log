@@ -1,0 +1,14 @@
+[2023-06-11T17:21:15.043+0000] {processor.py:153} INFO - Started process (PID=34) to work on /opt/airflow/dags/insertTime.py
+[2023-06-11T17:21:15.045+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/insertTime.py for tasks to queue
+[2023-06-11T17:21:15.046+0000] {logging_mixin.py:137} INFO - [2023-06-11T17:21:15.046+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/insertTime.py
+[2023-06-11T17:21:15.236+0000] {processor.py:753} INFO - DAG(s) dict_keys(['time_task']) retrieved from /opt/airflow/dags/insertTime.py
+[2023-06-11T17:21:15.404+0000] {logging_mixin.py:137} INFO - [2023-06-11T17:21:15.404+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-11T17:21:15.543+0000] {logging_mixin.py:137} INFO - [2023-06-11T17:21:15.543+0000] {dag.py:3456} INFO - Setting next_dagrun for time_task to 2023-06-10T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-11T17:21:15.667+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/insertTime.py took 0.629 seconds
+[2023-06-11T17:21:58.694+0000] {processor.py:153} INFO - Started process (PID=35) to work on /opt/airflow/dags/insertTime.py
+[2023-06-11T17:21:58.727+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/insertTime.py for tasks to queue
+[2023-06-11T17:21:58.822+0000] {logging_mixin.py:137} INFO - [2023-06-11T17:21:58.777+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/insertTime.py
+[2023-06-11T17:22:18.331+0000] {processor.py:753} INFO - DAG(s) dict_keys(['time_task']) retrieved from /opt/airflow/dags/insertTime.py
+[2023-06-11T17:22:20.339+0000] {logging_mixin.py:137} INFO - [2023-06-11T17:22:20.339+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-11T17:22:20.533+0000] {logging_mixin.py:137} INFO - [2023-06-11T17:22:20.530+0000] {dag.py:3456} INFO - Setting next_dagrun for time_task to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-11T17:22:20.587+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/insertTime.py took 24.435 seconds
