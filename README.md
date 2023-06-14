@@ -18,13 +18,13 @@ brew install minikube
 minikube start
 ```
 
-2. Using the ```postgres-deployment.yaml``` file the pod containing postgres container was made. The following command was used,
+2. Using the ```postgres-deployment.yaml``` file the pod containing postgres container was created. The following command was used,
 ```bash
 kubectl apply -f postgres-deployment.yaml
 minikube ssh
 kubectl exec -it -u root postgres /bin/bash
 ```
-Then ran the following command to initialise the database and make a user.
+Then ran the following commands to initialise the database and make a user.
 ```bash
 apt-get -y update
 apt-get  -y install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget 
@@ -56,7 +56,7 @@ kubectl apply -f airflow-deployment.yaml
 ```bash
 kubectl apply -f airflow-service.yaml
 ```
-6. create my dag as time_task.py inside airflow scheduler
+6. created my dag as time_task.py inside airflow scheduler
 ```
 minikube ssh
 # for creating dag
