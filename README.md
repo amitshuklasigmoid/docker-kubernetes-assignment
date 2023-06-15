@@ -22,7 +22,7 @@ minikube start
 ```bash
 kubectl apply -f postgres-deployment.yaml
 minikube ssh
-kubectl exec -it -u root postgres /bin/bash
+docker exec -it -u root postgres-container-id /bin/bash
 ```
 Then ran the following commands to initialise the database and make a user.
 ```bash
@@ -60,7 +60,7 @@ kubectl apply -f airflow-service.yaml
 ```
 minikube ssh
 # for creating dag
-kubectl exec -it -u root airflow-scheduler /bin/bash
+docker exec -it -u root airflow-scheduler-id /bin/bash
 cd dags
 #installed vim by running these commands
 apt-get update
